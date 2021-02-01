@@ -1,2 +1,112 @@
-# Assignment05
-This is a REPO for Assignment05, which is to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery, although in my case I plan to use Javascript.
+# Assignment04
+This is the repo for the Code Quiz assignment 05, due Jan 28, 2021.
+
+
+# Unit 04 Javascript Homework: Code Quiz
+
+Submitted: February -- 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
+
+# 01 Goal: The Goal of this project is .......  Here is a link to the Github folder https://github.com/Emjayosee/Assignment05 and a link to the deployed website https://emjayosee.github.io/Assignment05/.
+
+# 02 Approach:
+
+    In approching this project, blah blah blah
+
+    I followed the following plan design:
+
+        Code Quiz
+
+            Goal:
+
+            Develop a timed quiz on Coding and have it present a question, allow th user time to respond and go to the next question, advising the user if they are correct or incorrect and then keeping track of the scores and high scores.
+
+            Design:
+            •	Landing page to expain the rules and start the quiz;
+            •	Need to build a timer to countdown and penalize if there is a wrong guess;
+            •	Need to be able to cycle questions through a part of the viewport;
+            •	Need a way to aggregate the scores, add as records and display the top scores;
+            •	Need an alert to say when the game is over;
+            •	Need a way to identify the player;
+            
+            Here is the basic logic flow (ignoring the high score feature):
+
+
+                [X] On load, display introduction and name/start section
+
+                [X] User enters name
+
+                [X] On START, question 1 is displayed and clock starts to countdown, await user event, user is greated by name
+
+                [X] User selects answer from choice of boxes and submits response by clicking button
+
+                [X] If time = 0, quizEnd
+
+                [X] On Click, nextQuestion
+
+                [X] If answer is correct, score = plus one
+
+                [X] If answer is incorrect time = minus 5 seconds
+
+                [X] If (time > 0 and Q# < array.length), loadNextQuestion, else, quizEnd
+
+                [X] If quizEnd, display gameOver Image, with finalScore for 5 seconds 
+
+                [X] Load name and finalScore to display
+
+                [X] Display scoreBoard and playAgain Button
+
+                [ ] If playAgain, clear and restart the process     
+
+
+            Build:
+            •	Set up three files, index.html, script.js and style.css (add to Github) [x]
+            •	HTML:
+                >Layout for Landing page [x]
+                >Layout for question and multiple choice answers [x]
+                >Knit functions for current score, gameOver. [x]
+
+            JavaScript: 
+                > Timer routine [x]
+                > Splash screen routine that announces game is over - alert box [x]
+            •	CSS:
+                >Stylish background image and footer styling [x]
+            •   Establish Q&A theme [x]
+
+            Validation:
+            •	Alert if no name entered in required playerName field
+
+
+# 03 Testing and Quality Control:
+
+    1. Test each of the criteria to confirm functionality.
+
+    2. Format HTML Code to make it easier to follow when viewed at source.
+
+    3. Load the files and tested the page functionality at GITHUB.
+
+    6. Run the html through a code validation service on the final commit.  Use validator.w3.org and describe any issues and resolution.  Adjust before the final commit. Some duplicate attribute issues, but does not seem to impact results.
+
+# 04 Lessons Learned:
+
+The following items should be considered for future enhancements, time and budget permitting:
+
+    1. TBD
+
+    2. TBD
+
+
+# 05 Further improvements to make:
+
+    1. TBD
+
+    2. TBD
+
+
+# 06 Current Renderings:
+
+See Current Rendering at the time of writing in the Assignment04 Repo. 
+![alt text](Assets/Images/StartScreenEMpty.png)
+![alt text](Assets/Images/StartScreenWIthName.png)
+![alt text](Assets/Images/Question.png)
+![alt text](Assets/Images/QuestionCorrect.png)
+![alt text](Assets/Images/GameOverScreen.png)
