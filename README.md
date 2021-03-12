@@ -6,13 +6,13 @@ This is the repo for the Code Quiz assignment 05, due Jan 28, 2021.
 
 Submitted: March 12, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
-# 01 
+# 01 Goal: 
 
-    Goal: The Goal of this project is to create a simple calendar application that allows a user 
+    The Goal of this project is to create a simple calendar application that allows a user 
     to save events for each hour of the day by modifying starter code. This app will run in the 
     browser and feature dynamically updated HTML and where possible CSS powered by jQuery. Here 
-    is a link to the Github folder https://github.com/Emjayosee/Assignment05 and a link to the 
-    deployed website https://emjayosee.github.io/Assignment05/.
+    is a link to the Github folder <https://github.com/Emjayosee/Assignment05> and a link to the 
+    deployed website <https://emjayosee.github.io/Assignment05/>.
 
 # 02 Approach:
 
