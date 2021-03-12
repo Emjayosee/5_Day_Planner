@@ -25,22 +25,21 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
             Goal:
 
-            Develop a timed quiz on Coding and have it present a question, allow th user time 
-            to respond and go to the next question, advising the user if they are correct or 
-            incorrect and then keeping track of the scores and high scores.
+            Develope a calendar that can be used to plan out each day, with some user requested features, like colour coding of the event time blocks.
 
             Design:
             [X]	WHEN the user opens the planner the current day and time is displayed at the 
                 top of the calendar
-            [X]	WHEN the user scroll down the user is presented with timeblocks for standard business hours
-            [X] WHEN the user views the timeblocks for that day, and clicks the time block to bypass 
-                the privacy screen, the events are listed
-            [ ] Each timeblock is color coded to indicate whether it is in the past, present, or future
-            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is saved
-                 in the background and can be recalled by clicking on the text area again presumably
-                 in local storage and when the page is refreshed the saved events persist   
+            [X]	WHEN the user scroll down the user is presented with timeblocks for standard
+                 business hours
+            [X] WHEN the user views the timeblocks for that day, and clicks the time block to
+                  bypass the privacy screen, the events are listed
+            [ ] Each timeblock is color coded to indicate whether it is in the past, present, or 
+                future
+            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is 
+                saved in the background and can be recalled by clicking on the text area again presumably in local storage and when the page is refreshed the saved events persist   
             
-            Here is the basic logic flow (ignoring the coour coded timeslots: past, future and present):
+            Here is the basic logic flow :
 
 
                 [X] On load, display introduction and directions
@@ -49,7 +48,7 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
                 [X] User can see the entries by clicking the field
 
-                [ ] When the page loads the schedule refreshed the boxes and displays a colour for past, present and future.
+                [X] When the page loads the schedule refreshed the boxes and displays a colour for past, present and future.
 
 
             Build:
@@ -102,6 +101,7 @@ The following items should be considered for future enhancements, time and budge
 
 # 06 Current Renderings:
 
-See Current Rendering at the time of writing in the Assignment04 Repo. 
+See Current Rendering at the time of writing in the Assignment05 Repo. 
+![alt text](Assets/Images/MainView.png)
 ![alt text](Assets/Images/Morning.png)
 ![alt text](Assets/Images/Afternoon.png)
