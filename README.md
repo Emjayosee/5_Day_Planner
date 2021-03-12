@@ -2,7 +2,7 @@
 This is the repo for the Code Quiz assignment 05, due Jan 28, 2021.
 
 
-# Unit 04 Javascript Homework: Code Quiz
+# Unit 05 Javascript Homework: Day Planner
 
 Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
@@ -18,12 +18,10 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
     In approaching this project, I fell behind and had to go back about a month to pick it up 
     again, with so many advances, I spent several hours trying to achieve the objectives.  This 
-    is what I have so far, it meets a number of the requirements, and by accident includes privacy 
-    blocker so that the user clicks te window to see events.  
+    is what I have so far, it meets a number of the requirements, and by accident includes what 
+    I will call a "privacy shield" so that the user clicks te window to see events.  
 
     I followed the following plan design:
-
-        Code Quiz
 
             Goal:
 
@@ -38,8 +36,9 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
             [X] WHEN the user views the timeblocks for that day, and clicks the time block to bypass 
                 the privacy screen, the events are listed
             [ ] Each timeblock is color coded to indicate whether it is in the past, present, or future
-            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is saved in 
-                the background and can be recalled by clicking on the text area again presumably in local storage and when the page is refreshed the saved events persist   
+            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is saved
+                 in the background and can be recalled by clicking on the text area again presumably
+                 in local storage and when the page is refreshed the saved events persist   
             
             Here is the basic logic flow (ignoring the coour coded timeslots: past, future and present):
 
@@ -61,8 +60,10 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
                 >CSS [x]
 
             JavaScript: 
-                > Timer routine [x]
-                > Splash screen routine that announces game is over - alert box [x]
+                > Use of JQuery [ ]
+                > Use of moment.js [X]
+                > Loop routine to classify past, present and future [ ]
+                > Save routine [ ]
             
             CSS:
                 >Stylish background image and styling [x]
@@ -77,7 +78,9 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
     3. Load the files and tested the page functionality at GITHUB.
 
-    6. Run the html through a code validation service on the final commit.  Use validator.w3.org and describe any issues and resolution.  Adjust before the final commit. Some duplicate attribute issues, but does not seem to impact results.
+    4. Run the html through a code validation service on the final commit.  Use validator.w3.org 
+    and describe any issues and resolution.  Adjust before the final commit. Some duplicate 
+    attribute issues, but does not seem to impact results.
 
 # 04 Lessons Learned:
 
