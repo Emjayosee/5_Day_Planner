@@ -8,14 +8,18 @@ Submitted: March 12, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
 # 01 
 
-    Goal: The Goal of this project is to create a simple calendar application that allows a user to save events
-    for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically
-    updated HTML and where possible CSS powered by jQuery. Here is a link to the Github folder
-    https://github.com/Emjayosee/Assignment05 and a link to the deployed website https://emjayosee.github.io/Assignment05/.
+    Goal: The Goal of this project is to create a simple calendar application that allows a user 
+    to save events for each hour of the day by modifying starter code. This app will run in the 
+    browser and feature dynamically updated HTML and where possible CSS powered by jQuery. Here 
+    is a link to the Github folder https://github.com/Emjayosee/Assignment05 and a link to the 
+    deployed website https://emjayosee.github.io/Assignment05/.
 
 # 02 Approach:
 
-    In approching this project, I fell behind and had to go back about a month to pick it up again, with so many advances, I spent several hours trying to achieve the objectives.  This is what I have so far, it meets a number of the requirements, and by accident includes privacy blocker so that the user clicks te window to see events.  
+    In approaching this project, I fell behind and had to go back about a month to pick it up 
+    again, with so many advances, I spent several hours trying to achieve the objectives.  This 
+    is what I have so far, it meets a number of the requirements, and by accident includes privacy 
+    blocker so that the user clicks te window to see events.  
 
     I followed the following plan design:
 
@@ -23,16 +27,19 @@ Submitted: March 12, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
             Goal:
 
-            Develop a timed quiz on Coding and have it present a question, allow th user time to respond and go to the next question, advising the user if they are correct or incorrect and then keeping track of the scores and high scores.
+            Develop a timed quiz on Coding and have it present a question, allow th user time 
+            to respond and go to the next question, advising the user if they are correct or 
+            incorrect and then keeping track of the scores and high scores.
 
             Design:
-            [X]	WHEN the user opens the planner the current day and time is displayed at the top of the calendar
+            [X]	WHEN the user opens the planner the current day and time is displayed at the 
+                top of the calendar
             [X]	WHEN the user scroll down the user is presented with timeblocks for standard business hours
-            [X] WHEN the user views the timeblocks for that day, and clicks the time block to bypass the privacy screen, the events are listed
+            [X] WHEN the user views the timeblocks for that day, and clicks the time block to bypass 
+                the privacy screen, the events are listed
             [ ] Each timeblock is color coded to indicate whether it is in the past, present, or future
-            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is saved in the background
-                and can be recalled by clicking on the text area again presumably in local storage and when the page is 
-                refreshed the saved events persist   
+            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is saved in 
+                the background and can be recalled by clicking on the text area again presumably in local storage and when the page is refreshed the saved events persist   
             
             Here is the basic logic flow (ignoring the coour coded timeslots: past, future and present):
 
