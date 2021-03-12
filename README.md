@@ -1,16 +1,21 @@
-# Assignment04
+# Assignment05
 This is the repo for the Code Quiz assignment 05, due Jan 28, 2021.
 
 
 # Unit 04 Javascript Homework: Code Quiz
 
-Submitted: February -- 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
+Submitted: March 12, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
-# 01 Goal: The Goal of this project is .......  Here is a link to the Github folder https://github.com/Emjayosee/Assignment05 and a link to the deployed website https://emjayosee.github.io/Assignment05/.
+# 01 
+
+    Goal: The Goal of this project is to create a simple calendar application that allows a user to save events
+    for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically
+    updated HTML and where possible CSS powered by jQuery. Here is a link to the Github folder
+    https://github.com/Emjayosee/Assignment05 and a link to the deployed website https://emjayosee.github.io/Assignment05/.
 
 # 02 Approach:
 
-    In approching this project, blah blah blah
+    In approching this project, I fell behind and had to go back about a month to pick it up again, with so many advances, I spent several hours trying to achieve the objectives.  This is what I have so far, it meets a number of the requirements, and by accident includes privacy blocker so that the user clicks te window to see events.  
 
     I followed the following plan design:
 
@@ -21,59 +26,40 @@ Submitted: February -- 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
             Develop a timed quiz on Coding and have it present a question, allow th user time to respond and go to the next question, advising the user if they are correct or incorrect and then keeping track of the scores and high scores.
 
             Design:
-            •	Landing page to expain the rules and start the quiz;
-            •	Need to build a timer to countdown and penalize if there is a wrong guess;
-            •	Need to be able to cycle questions through a part of the viewport;
-            •	Need a way to aggregate the scores, add as records and display the top scores;
-            •	Need an alert to say when the game is over;
-            •	Need a way to identify the player;
+            [X]	WHEN the user opens the planner the current day and time is displayed at the top of the calendar
+            [X]	WHEN the user scroll down the user is presented with timeblocks for standard business hours
+            [X] WHEN the user views the timeblocks for that day, and clicks the time block to bypass the privacy screen, the events are listed
+            [ ] Each timeblock is color coded to indicate whether it is in the past, present, or future
+            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is saved in the background
+                and can be recalled by clicking on the text area again presumably in local storage and when the page is 
+                refreshed the saved events persist   
             
-            Here is the basic logic flow (ignoring the high score feature):
+            Here is the basic logic flow (ignoring the coour coded timeslots: past, future and present):
 
 
-                [X] On load, display introduction and name/start section
+                [X] On load, display introduction and directions
 
-                [X] User enters name
+                [X] User is advised to click the text area to add an entry
 
-                [X] On START, question 1 is displayed and clock starts to countdown, await user event, user is greated by name
+                [X] User can see the entries by clicking the field
 
-                [X] User selects answer from choice of boxes and submits response by clicking button
-
-                [X] If time = 0, quizEnd
-
-                [X] On Click, nextQuestion
-
-                [X] If answer is correct, score = plus one
-
-                [X] If answer is incorrect time = minus 5 seconds
-
-                [X] If (time > 0 and Q# < array.length), loadNextQuestion, else, quizEnd
-
-                [X] If quizEnd, display gameOver Image, with finalScore for 5 seconds 
-
-                [X] Load name and finalScore to display
-
-                [X] Display scoreBoard and playAgain Button
-
-                [ ] If playAgain, clear and restart the process     
+                [ ] When the page loads the schedule refreshed the boxes and displays a colour for past, present and future.
 
 
             Build:
             •	Set up three files, index.html, script.js and style.css (add to Github) [x]
             •	HTML:
                 >Layout for Landing page [x]
-                >Layout for question and multiple choice answers [x]
-                >Knit functions for current score, gameOver. [x]
+                >Schedule of events by hour 9 to 5 [x]
+                >CSS [x]
 
             JavaScript: 
                 > Timer routine [x]
                 > Splash screen routine that announces game is over - alert box [x]
-            •	CSS:
-                >Stylish background image and footer styling [x]
-            •   Establish Q&A theme [x]
-
-            Validation:
-            •	Alert if no name entered in required playerName field
+            
+            CSS:
+                >Stylish background image and styling [x]
+            
 
 
 # 03 Testing and Quality Control:
@@ -88,25 +74,24 @@ Submitted: February -- 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
 # 04 Lessons Learned:
 
-The following items should be considered for future enhancements, time and budget permitting:
+The following lessons learned:
 
-    1. TBD
+    1. Use of loops
 
-    2. TBD
+    2. How to save data in local storage
 
 
 # 05 Further improvements to make:
 
-    1. TBD
+The following items should be considered for future enhancements, time and budget permitting:
 
-    2. TBD
+    1. Use of local storage
+
+    2. Ability to delete entires
 
 
 # 06 Current Renderings:
 
 See Current Rendering at the time of writing in the Assignment04 Repo. 
-![alt text](Assets/Images/StartScreenEMpty.png)
-![alt text](Assets/Images/StartScreenWIthName.png)
-![alt text](Assets/Images/Question.png)
-![alt text](Assets/Images/QuestionCorrect.png)
-![alt text](Assets/Images/GameOverScreen.png)
+![alt text](Assets/Images/Morning.png)
+![alt text](Assets/Images/Afternoon.png)

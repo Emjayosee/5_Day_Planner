@@ -15,10 +15,15 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: green;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.NB{
+  font-size:15px;
+  font-style:italic;
 }
 
 .description{
@@ -33,7 +38,7 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  /* border-top: 1px solid white;; */
 }
 
 .hour {
@@ -68,4 +73,14 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
