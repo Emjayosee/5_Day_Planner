@@ -22,38 +22,126 @@ function myFunction() {
 
 // Run through the time and add the class to the entry depending on the time of day
 
-// const events = [
-//     {time:9, entry: ""},
-//     {time:10, entry: ""},
-//     {time:11, entry: ""},
-//     {time:12, entry: ""},
-//     {time:13, entry: ""},
-//     {time:14, entry: ""},
-//     {time:15, entry: ""},
-//     {time:16, entry: ""},
-//     {time:17, entry: ""},
+var events = [
+    {time:9, entry: ""},
+    {time:10, entry: ""},
+    {time:11, entry: ""},
+    {time:12, entry: ""},
+    {time:13, entry: ""},
+    {time:14, entry: ""},
+    {time:15, entry: ""},
+    {time:16, entry: ""},
+    {time:17, entry: ""},
+]
 
-// ]
+let now = moment();
+let hour = now.get('hour');
+let eventWindowStart = 9;
+console.log("Start of Day: " + eventWindowStart);
+console.log("Current Hour: " + hour);
+console.log("Whether Current Hour is more or less than Event Window: " + (hour-eventWindowStart));
+console.log("Number of Event Windows in the Day: " + events.length)
 
-// let now = moment();
-// let hour = now.get('hour');
-// console.log("Hour: " + hour);
-
-// function myFunction() {
-//     for (let i = 0; i < events.length; index++){
-        
-//         if (hour<events.time[i]) {
-//             document.getElementsByid("i+9")[i].setAttribute("class", "future");
-//         }else{
-//             if (hour>events.time[i]) {
-//             document.getElementsByid("i+9")[i].setAttribute("class", "past");
-//         }else{
-//             document.getElementsByid("i+9")[i].setAttribute("class", "present");
-//             }
-//         }
-//         }
+// for (let i = 0; i < events.length; index++){
+// if ((hour-eventWindowStart+[i])>0) {
+//       $(document).ready(function(){$("#[i]+9").addClass("past");});
+//     } else {
+//         if ((hour-eventWindowStart+[i])<0) {
+//           $(document).ready(function(){$("#[i]+9").addClass("future");});
+//             } else {
+//               $(document).ready(function(){$("#[i]+9").addClass("present");});
 //     }
+//   }
+// }
 
+if ((hour-eventWindowStart)>0) {
+  $(document).ready(function(){$("#9").addClass("past");});
+} else {
+    if ((hour-eventWindowStart)<0) {
+      $(document).ready(function(){$("#9").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#9").addClass("present");});
+}
+}  
+if ((hour-eventWindowStart-1)>0) {
+    $(document).ready(function(){$("#10").addClass("past");});
+  } else {
+      if ((hour-eventWindowStart-1)<0) {
+        $(document).ready(function(){$("#10").addClass("future");});
+          } else {
+            $(document).ready(function(){$("#10").addClass("present");});
+  }
+}
+  
+if ((hour-eventWindowStart-2)>0) {
+  $(document).ready(function(){$("#11").addClass("past");});
+} else {
+    if ((hour-eventWindowStart-2)<0) {
+      $(document).ready(function(){$("#11").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#11").addClass("present");});
+}
+}
+
+if ((hour-eventWindowStart-3)>0) {
+    $(document).ready(function(){$("#12").addClass("past");});
+  } else {
+      if ((hour-eventWindowStart-3)<0) {
+        $(document).ready(function(){$("#12").addClass("future");});
+          } else {
+            $(document).ready(function(){$("#12").addClass("present");});
+  }
+}
+
+if ((hour-eventWindowStart-4)>0) {
+  $(document).ready(function(){$("#13").addClass("past");});
+} else {
+    if ((hour-eventWindowStart-4)<0) {
+      $(document).ready(function(){$("#13").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#13").addClass("present");});
+}
+}
+
+if ((hour-eventWindowStart-5)>0) {
+  $(document).ready(function(){$("#14").addClass("past");});
+} else {
+    if ((hour-eventWindowStart-5)<0) {
+      $(document).ready(function(){$("#14").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#14").addClass("present");});
+}
+}
+
+if ((hour-eventWindowStart-6)>0) {
+  $(document).ready(function(){$("#15").addClass("past");});
+} else {
+    if ((hour-eventWindowStart-6)<0) {
+      $(document).ready(function(){$("#15").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#15").addClass("present");});
+}
+}
+
+if ((hour-eventWindowStart-7)>0) {
+  $(document).ready(function(){$("#16").addClass("past");});
+} else {
+    if ((hour-eventWindowStart-7)<0) {
+      $(document).ready(function(){$("#16").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#16").addClass("present");});
+}
+}
+         
+if ((hour-eventWindowStart-8)>0) {
+  $(document).ready(function(){$("#17").addClass("past");});
+} else {
+    if ((hour-eventWindowStart-8)<0) {
+      $(document).ready(function(){$("#17").addClass("future");});
+        } else {
+          $(document).ready(function(){$("#17").addClass("present");});
+}
+}
 
 // Save the Data Entered Each Day
 
@@ -72,8 +160,6 @@ function myFunction() {
     //     // Convert the text to BLOB.
     //     const textToBLOB = new Blob([data], { type: 'text/plain' });
     //     const sFileName = 'formData.txt';	   // The file to save the data.
-
-        
     // }
 
 
