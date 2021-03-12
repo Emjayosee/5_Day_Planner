@@ -1,4 +1,5 @@
-
+// This is the Javascript file for the note taker site. -->
+// last updated by Michael O'Connor, March 12, 2021 -->
 
 // Insert Current date at Top of Work Day Scheduler
 var today = moment().format("[As per locale the date is ] LLLL");
@@ -41,6 +42,8 @@ console.log("Start of Day: " + eventWindowStart);
 console.log("Current Hour: " + hour);
 console.log("Whether Current Hour is more or less than Event Window: " + (hour-eventWindowStart));
 console.log("Number of Event Windows in the Day: " + events.length)
+
+// Here is a loop routine that I tried to get going but ran out of time, will execute next time.
 
 // for (let i = 0; i < events.length; index++){
 // if ((hour-eventWindowStart+[i])>0) {

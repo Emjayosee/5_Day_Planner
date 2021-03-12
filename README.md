@@ -13,8 +13,8 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
     The Goal of this project is to create a simple calendar application that allows a user 
     to save events for each hour of the day by modifying starter code. This app will run in the 
     browser and feature dynamically updated HTML and where possible CSS powered by jQuery. Here 
-    is a link to the Github folder https://emjayosee.github.io/Assignment05/ and a link to the 
-    deployed website https://github.com/Emjayosee/Assignment05.
+    is a link to the Github folder https://github.com/Emjayosee/Assignment05
+    and a link to thedeployed website https://emjayosee.github.io/Assignment05/.
 
 # 02 Approach:
 
@@ -27,22 +27,22 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
             Goal:
 
-            Develope a calendar that can be used to plan out each day, with some user requested features, like colour coding of the event time blocks.
+            Develop a calendar that can be used to plan out each day, with some user requested features, like colour coding of the event time blocks.
 
             Design:
+
             [X]	WHEN the user opens the planner the current day and time is displayed at the 
                 top of the calendar
-            [X]	WHEN the user scroll down the user is presented with timeblocks for standard
+            [X]	WHEN the user scrolls down the user is presented with timeblocks for standard
                  business hours
+            [X] Each timeblock is color coded to indicate whether it is in the past, present, or 
+                future
             [X] WHEN the user views the timeblocks for that day, and clicks the time block to
                   bypass the privacy screen, the events are listed
-            [ ] Each timeblock is color coded to indicate whether it is in the past, present, or 
-                future
             [X] WHEN the user clicks into a timeblock, the user can enter an event and it is 
                 saved in the background and can be recalled by clicking on the text area again presumably in local storage and when the page is refreshed the saved events persist   
             
             Here is the basic logic flow :
-
 
                 [X] On load, display introduction and directions
 
@@ -50,12 +50,13 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
                 [X] User can see the entries by clicking the field
 
-                [X] When the page loads the schedule refreshed the boxes and displays a colour for past, present and future.
-
+                [X] When the page loads the schedule refreshed the boxes and displays a colour 
+                    for past, present and future.
 
             Build:
             •	Set up three files, index.html, script.js and style.css (add to Github) [x]
-            •	HTML:
+            
+            HTML:
                 >Layout for Landing page [x]
                 >Schedule of events by hour 9 to 5 [x]
                 >CSS [x]
@@ -80,8 +81,7 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
     3. Load the files and tested the page functionality at GITHUB.
 
     4. Run the html through a code validation service on the final commit.  Use validator.w3.org 
-    and describe any issues and resolution.  Adjust before the final commit. Some duplicate 
-    attribute issues, but does not seem to impact results.
+    and describe any issues and resolution.  Adjust before the final commit. Some issues with tags, but does not seem to impact results.
 
 # 04 Lessons Learned:
 
@@ -98,7 +98,7 @@ The following items should be considered for future enhancements, time and budge
 
     1. Use of local storage
 
-    2. Ability to delete entires
+    2. Ability to delete entries
 
 
 # 06 Current Renderings:
@@ -107,3 +107,5 @@ See Current Rendering at the time of writing in the Assignment05 Repo.
 ![alt text](Assets/Images/MainView.png)
 ![alt text](Assets/Images/Morning.png)
 ![alt text](Assets/Images/Afternoon.png)
+
+
