@@ -27,7 +27,8 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
             Goal:
 
-            Develop a calendar that can be used to plan out each day, with some user requested features, like colour coding of the event time blocks.
+            Develop a calendar that can be used to plan out each day, with some user 
+            requested features, like colour coding of the event time blocks.
 
             Design:
 
@@ -40,7 +41,9 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
             [X] WHEN the user views the timeblocks for that day, and clicks the time block to
                   bypass the privacy screen, the events are listed
             [X] WHEN the user clicks into a timeblock, the user can enter an event and it is 
-                saved in the background and can be recalled by clicking on the text area again presumably in local storage and when the page is refreshed the saved events persist   
+                saved in the background and can be recalled by clicking on the text area 
+                again presumably in local storage and when the page is refreshed the saved 
+                events persist   
             
             Here is the basic logic flow :
 
@@ -81,7 +84,8 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
     3. Load the files and tested the page functionality at GITHUB.
 
     4. Run the html through a code validation service on the final commit.  Use validator.w3.org 
-    and describe any issues and resolution.  Adjust before the final commit. Some issues with tags, but does not seem to impact results.
+    and describe any issues and resolution.  Adjust before the final commit. 
+    Some issues with tags, but does not seem to impact results.
 
 # 04 Lessons Learned:
 
