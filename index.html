@@ -1,5 +1,5 @@
 <!-- This is the HTML file for the note taker site. -->
-<!-- last updated by Michael O'Connor, March 12, 2021 -->
+<!-- last updated by Michael O'Connor, March 13, 2021 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -17,102 +18,128 @@
 </head>
 
 <body>
-  <header id="jumbotron" class="jumbotron">
-    <h1 class="display-3">Mjoc's Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day, finally delivered</p>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
-    <br>
-    <p class="NB">(scroll down for more hours)</p>
+    <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container">
+
+  </nav>
+  </header>
+  <div class="container ">
     <form>
       <div class="description">
         <div class="row">
           <div class="col-md-1 hour">
             <h5>9 am</h5>
           </div>
-          <input id="9" class="col-md-10 row textarea description"
-            placeholder="click here to view events this time block or enter a new one and hit return"></input>
-          <button class="col-md-1 saveBtn">Save</button>
+          <textarea id="myTextarea9" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+            onclick="mySave9()">Save</button>
         </div>
+    </form>
+      <br>
+    <form>
         <div class="description">
           <div class="row">
             <div class="col-md-1 hour">
               <h5>10 am</h5>
             </div>
-            <input id="10" class="col-md-10 row textarea description"
-              placeholder="click here to view events this time block or enter a new one and hit return"></input>
-            <button class="col-md-1 saveBtn">Save</button>
+            <textarea id="myTextarea10" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave10()">Save</button>
           </div>
-          <div class="description">
-            <div class="row">
-              <div class="col-md-1 hour">
-                <h5>11 am</h5>
-              </div>
-              <input id="11" class="col-md-10 row textarea description"
-                placeholder="click here to view events this time block or enter a new one and hit return"></input>
-              <button class="col-md-1 saveBtn">Save</button>
+        </div>
+    </form>
+      <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>11 am</h5>
             </div>
-            <div class="description">
-              <div class="row">
-                <div class="col-md-1 hour">
-                  <h5>12 pm</h5>
-                </div>
-                <input id="12" class="col-md-10 row textarea description"
-                  placeholder="click here to view events this time block or enter a new one and hit return"></input>
-                <button class="col-md-1 saveBtn">Save</button>
-              </div>
-              <div class="description">
-                <div class="row">
-                  <div class="col-md-1 hour">
-                    <h5>1 pm</h5>
-                  </div>
-                  <input id="13" class="col-md-10 row textarea description"
-                    placeholder="click here to view events this time block or enter a new one and hit return"></input>
-                  <button class="col-md-1 saveBtn">Save</button>
-                </div>
-                <div class="description">
-                  <div class="row">
-                    <div class="col-md-1 hour">
-                      <h5>2 pm</h5>
-                    </div>
-                    <input id="14" class="col-md-10 row textarea description"
-                      placeholder="click here to view events this time block or enter a new one and hit return"></input>
-                    <button class="col-md-1 saveBtn">Save</button>
-                  </div>
-                  <div class="description">
-                    <div class="row">
-                      <div class="col-md-1 hour">
-                        <h5>3 pm</h5>
-                      </div>
-                      <input id="15" class="col-md-10 row textarea description"
-                        placeholder="click here to view events this time block or enter a new one and hit return"></input>
-                      <button class="col-md-1 saveBtn">Save</button>
-                    </div>
-                    <div class="description">
-                      <div class="row ">
-                        <div class="col-md-1 hour">
-                          <h5>4 pm</h5>
-                        </div>
-                        <input id="16" class="col-md-10 row textarea description "
-                          placeholder="click here to view events this time block or enter a new one and hit return"></input>
-                        <button class="col-md-1 saveBtn">Save</button>
-                      </div>
-                      <div class="description">
-                        <div class="row">
-                          <div class="col-md-1 hour">
-                            <h5>5 pm</h5>
-                          </div>
-                          <input id="17" class="col-md-10 row textarea description "
-                            placeholder="click here to view events this time block or enter a new one and hit return"></input>
-                          <button class="col-md-1 saveBtn">Save</button>
-                        </div>
+            <textarea id="myTextarea11" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave11()">Save</button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>12 pm</h5>
+            </div>
+            <textarea id="myTextarea12" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave12()">Save</button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>13 pm</h5>
+            </div>
+            <textarea id="myTextarea13" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave13()">Save</button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>14 pm</h5>
+            </div>
+            <textarea id="myTextarea14" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave14()">Save</button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>15 pm</h5>
+            </div>
+            <textarea id="myTextarea15" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave15()">Save</button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>16 pm</h5>
+            </div>
+            <textarea id="myTextarea16" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave16()">Save</button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div class="description">
+          <div class="row">
+            <div class="col-md-1 hour">
+              <h5>17 pm</h5>
+            </div>
+            <textarea id="myTextarea17" class="col-md-8"></textarea><button class="col-md-1 saveBtn"
+              onclick="mySave17()">Save</button>
+          </div>
+        </div>
     </form>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="Assets/script.js"></script>
+
 </body>
 
 </html>
