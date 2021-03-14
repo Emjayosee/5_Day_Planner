@@ -21,7 +21,10 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
     In approaching this project, I fell behind and had to go back about a month to pick it up 
     again, with so many advances, I spent several hours trying to achieve the objectives.  My 
     initial submissions, failed to properly use loacl storage, even though it was an obvious requirement
-    I went back over the class illustrations, class video and found this useful article, https://www.tiny.cloud/blog/javascript-localstorage/ and rebuilt that app using local storage.
+    I went back over the class illustrations, class video and found this useful article, 
+    https://www.tiny.cloud/blog/javascript-localstorage/ and rebuilt that app using local storage.
+    I then made an attempt at a loop to run the various JS, colour coding, and was close but
+    worked with Tutor to make the loops work.  BOOM, now it is done!
 
     I followed the following plan design:
 
@@ -69,6 +72,7 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
                 > Use of moment.js [X]
                 > Adjust timeblocks to classify past, present and future [X ]
                 > Save routine [X]
+                > Loop for colour coding and loading from local storage.
             
             CSS:
                 >Stylish background image and styling [x]
@@ -92,6 +96,10 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 The following lessons learned:
 
     1. Use of loops, to reduce the duplication of code
+
+    2. Use of Jquery shortcuts.
+
+    3. Using Local Storage.
 
 # 05 Further improvements to make:
 
