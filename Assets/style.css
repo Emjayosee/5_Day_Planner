@@ -42,6 +42,9 @@ body {
   border-top: 1px solid white;;
 }
 
+.NB {
+  font-size:20 px;
+}
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -55,12 +58,12 @@ body {
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {

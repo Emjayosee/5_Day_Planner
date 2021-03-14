@@ -19,35 +19,35 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 # 02 Approach:
 
     In approaching this project, I fell behind and had to go back about a month to pick it up 
-    again, with so many advances, I spent several hours trying to achieve the objectives.  This 
-    is what I have so far, it meets a number of the requirements, and by accident includes what 
-    I will call a "privacy shield" so that the user clicks te window to see events.  
+    again, with so many advances, I spent several hours trying to achieve the objectives.  My 
+    initial submissions, failed to properly use loacl storage, even though it was an obvious requirement
+    I went back over the class illustrations, class video and found this useful article, https://www.tiny.cloud/blog/javascript-localstorage/ and rebuilt that app using local storage.
 
     I followed the following plan design:
 
             Goal:
 
             Develop a calendar that can be used to plan out each day, with some user 
-            requested features, like colour coding of the event time blocks.
+            requested features, like colour coding of the event time blocks and an ability 
+            to save the entries in local storage.  
 
             Design:
 
             [X]	WHEN the user opens the planner the current day and time is displayed at the 
-                top of the calendar
+                top of the calendar.
             [X]	WHEN the user scrolls down the user is presented with timeblocks for standard
-                 business hours
+                 business hours.
             [X] Each timeblock is color coded to indicate whether it is in the past, present, or 
-                future
-            [X] WHEN the user views the timeblocks for that day, and clicks the time block to
-                  bypass the privacy screen, the events are listed
-            [X] WHEN the user clicks into a timeblock, the user can enter an event and it is 
-                saved in the background and can be recalled by clicking on the text area 
-                again presumably in local storage and when the page is refreshed the saved 
-                events persist   
+                future, past events are then displayed in white.
+            [X] WHEN the user views the timeblocks for that day the events are listed and persists
+                when that user returns using that URL.
+            [X] WHEN the user clicks into a timeblock, the user can add to the event and save a 
+                new entry for that timeblock, whatever is entered at the time of saving is
+                stored in local storage.   
             
             Here is the basic logic flow :
 
-                [X] On load, display introduction and directions
+                [X] On load, display timeblocks 
 
                 [X] User is advised to click the text area to add an entry
 
@@ -65,10 +65,10 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
                 >CSS [x]
 
             JavaScript: 
-                > Use of JQuery [ ]
+                > Use of JQuery [X]
                 > Use of moment.js [X]
-                > Loop routine to classify past, present and future [ ]
-                > Save routine [ ]
+                > Adjust timeblocks to classify past, present and future [X ]
+                > Save routine [X]
             
             CSS:
                 >Stylish background image and styling [x]
@@ -91,25 +91,19 @@ Submitted: March 12, 2021, Michael O'Connor, 604 765-6061
 
 The following lessons learned:
 
-    1. Use of loops
-
-    2. How to save data in local storage
-
+    1. Use of loops, to reduce the duplication of code
 
 # 05 Further improvements to make:
 
 The following items should be considered for future enhancements, time and budget permitting:
 
-    1. Use of local storage
-
-    2. Ability to delete entries
-
+    1. Add an ability to send the file as a note by email or text.
 
 # 06 Current Renderings:
 
 See Current Rendering at the time of writing in the Assignment05 Repo. 
-![alt text](Assets/Images/MainView.png)
-![alt text](Assets/Images/Morning.png)
-![alt text](Assets/Images/Afternoon.png)
+![alt text](Assets/Images/EarlyMorningView.png)
+![alt text](Assets/Images/TenAMView.png)
+
 
 
